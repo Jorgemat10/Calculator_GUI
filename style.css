@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 90%);
+    margin: 25px;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+}
+
+#about-left, #about-right {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Arial;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#about-left {
+    margin-right: 20px;
+}
+
+#about-right {
+    margin-left: 20px;
+}
+
+button{
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active{
+    background-color: hsl(0, 0%, 20%);
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button.equals {
+    grid-column: span 3; /* Make the "=" button twice as tall */
+    border-radius: 90px; /* Adjusted border radius for visual balance */
+    width: 300px; /* Make the "=" button taller */
+}
+
+#calculator{
+    font-family: 'Segoe UI', Arial;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    font-size: 5rem;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white; 
+    padding-top: 40px;
+}
+
+.operator{
+    background-color: hsl(39, 100%, 50%);
+}
+
+.operator:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+
+.operator:active{
+    background-color: hsl(39, 100%, 40%);
+}
+
+/* Styles for macOS window controls */
+#mac-controls {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.mac-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff5f57; /* Close Button (Red) */
+    cursor: pointer;
+}
+
+.mac-btn:nth-child(2) {
+    background-color: #ffbd2e; /* Minimize Button (Yellow) */
+}
+
+.mac-btn:nth-child(3) {
+    background-color: #28c93f; /* Maximize Button (Green) */
+}
+

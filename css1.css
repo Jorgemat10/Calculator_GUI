@@ -1,0 +1,59 @@
+#mac-controls {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.mac-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f57; /* Close Button (Red) */
+    cursor: pointer;
+}
+
+.mac-btn:nth-child(2) {
+    background-color: #ffbd2e; /* Minimize Button (Yellow) */
+}
+
+.mac-btn:nth-child(3) {
+    background-color: #28c93f; /* Maximize Button (Green) */
+}
+
+/* Adjust display and key styles */
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.operator {
+    background-color: #d3d3d3;
+}
+
+button:hover {
+    background-color: #ccc;
+}

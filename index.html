@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="about-left">
+            <!-- Add text on the left side -->
+            <p>This calculator is designed to help you with basic arithmetic operations.</p>
+        </div>
+
+    <div id="calculator">
+        <!-- macOS style window controls -->
+        <div id="mac-controls">
+            <div class="mac-btn"></div>
+            <div class="mac-btn"></div>
+            <div class="mac-btn"></div>
+        </div>
+        <input type="text" id="display" disabled>
+        <div id="keys">
+            <button onclick="clearDisplay()" class="operator">AC</button>            
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="backspace()" class="operator">←</button>            
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('+')" class="operator">+</button>            
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('-')" class="operator">-</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('.')">.</button>
+                        
+            <button onclick="addToDisplay('*')" class="operator">*</button>
+            <button onclick="addToDisplay('/')" class="operator">/</button>
+            <button onclick="calculate()" class="equals">=</button>
+            
+        </div>
+    </div>
+
+    <div id="about-right">
+        <!-- Add text on the right side -->
+        <p>Use the calculator by clicking the buttons or by using your keyboard.</p>
+        <ul>
+            <li>Press "Enter" to calculate the result</li>
+            <li>Press "Backspace" to delete the last character</li>
+            <li>Press "Escape" to clear the display</li>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
