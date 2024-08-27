@@ -8,7 +8,7 @@ A simple calculator web app designed with a macOS-like UI. This project features
 - macOS-style window controls (close, minimize, maximize)
 - Responsive design with an adjustable button layout
 
-## Screenshots
+## Screenshot
 ![Calculator Screenshot](https://github.com/Jorgemat10/Calculator_GUI/blob/main/Screenshot%202024-08-27.png)
 
 
